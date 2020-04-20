@@ -410,12 +410,11 @@ main .lingxue-video video::-webkit-media-controls-panel {
 
 .hua video {
   position: absolute;
-  width: 1340px;
   height: 750px;
   z-index: 0;
 }
 
-.hua .open {
+.hua .open, .hua .qg-open {
   position: absolute;
   z-index: 21;
   top: 246px;
@@ -423,7 +422,7 @@ main .lingxue-video video::-webkit-media-controls-panel {
   cursor: pointer;
 }
 
-.hua .openbg {
+.hua .openbg, .hua .qg-openbg {
   position: absolute;
   z-index: 20;
   top: 246px;
@@ -484,7 +483,7 @@ main .lingxue-video video::-webkit-media-controls-panel {
   }
 }
 
-.men-video {
+.men-video, .qg-video {
   width: 100%;
   height: 120%;
   position: absolute;
@@ -497,19 +496,20 @@ main .lingxue-video video::-webkit-media-controls-panel {
   display: none;
 }
 
-.men-video .close {
-  float: right;
+.men-video .close, .men-video .qg-close, .qg-video .close, .qg-video .qg-close {
+  position: fixed;
   cursor: pointer;
-  margin-top: 700px;
-  margin-right: 324px;
+  top: 124px;
+  right: 370px;
 }
 
-.men-video video {
+.men-video video, .qg-video video {
   height: 600px;
   z-index: 20;
   top: 790px;
-  position: absolute;
-  left: 500px;
+  position: fixed;
+  top: 165px;
+  left: 415px;
 }
 
 .word {
@@ -619,6 +619,7 @@ main .lingxue-video video::-webkit-media-controls-panel {
   width: 100%;
   height: 1000px;
   background-image: url(../img/xfe-layer-31-b80156dd.jpg.webp);
+  position: relative;
 }
 
 .zh .zh-bg {
@@ -636,9 +637,296 @@ main .lingxue-video video::-webkit-media-controls-panel {
   margin-top: 45px;
 }
 
-.zh img {
+.zh .zh-hua img {
   position: absolute;
   top: 0;
   left: 0;
+  display: none;
+}
+
+.zh .zh-hua img:nth-child(1) {
+  display: block;
+}
+
+.zh-daohang {
+  margin-top: 30px;
+  margin-left: 305px;
+  overflow: hidden;
+}
+
+.zh-daohang li {
+  width: 86px;
+  height: 40px;
+  background-image: url(../img/mpnav-8d7fe6eb.png.webp);
+  float: left;
+  position: relative;
+  cursor: pointer;
+}
+
+.zh-daohang li:nth-child(2) {
+  background-position: -88px 0px;
+}
+
+.zh-daohang li:nth-child(3) {
+  background-position: -176px 0px;
+}
+
+.zh-daohang li:nth-child(4) {
+  background-position: -264px 0px;
+}
+
+.zh-daohang li:nth-child(5) {
+  background-position: -352px 0px;
+}
+
+.zh-daohang li:nth-child(6) {
+  background-position: -440px 0px;
+}
+
+.zh-daohang li:nth-child(7) {
+  background-position: -528px 0px;
+}
+
+.zh-daohang li:nth-child(8) {
+  background-position: -616px 0px;
+}
+
+.zh-daohang li:nth-child(9) {
+  background-position: -704px 0px;
+}
+
+.zh-daohang li:nth-child(10) {
+  background-position: -792px 0px;
+}
+
+.zh-daohang li:nth-child(11) {
+  background-position: -880px 0px;
+}
+
+.zh-daohang li:nth-child(12) {
+  background-position: -968px 0px;
+}
+
+.zh-daohang li:nth-child(13) {
+  background-position: -1056px 0px;
+}
+
+.zh-daohang li:nth-child(14) {
+  background-position: -1144px 0px;
+}
+
+.zh-daohang li:nth-child(15) {
+  background-position: -1232px 0px;
+}
+
+.zh-bg1 {
+  width: 493px;
+  height: 321px;
+  background-image: url(../img/xfe-layer-50-80ede9b5.png.webp);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.wanfa {
+  background-color: #DAE4EC;
+  margin-top: -1px;
+  height: 975px;
+  position: relative;
+  z-index: 10;
+}
+
+.wanfa .wanfa-top {
+  margin-left: 270px;
+}
+
+.wanfa-hua {
+  width: 100%;
+  height: 720px;
+  overflow: hidden;
+  position: relative;
+  top: 30px;
+}
+
+.wanfa-hua img {
+  position: absolute;
+  display: none;
+}
+
+.wanfa-hua img:nth-child(1) {
+  display: block;
+}
+
+.wanfa-daohang {
+  width: 260px;
+  height: 282px;
+  position: absolute;
+  top: 269px;
+  right: 280px;
+}
+
+.wanfa-daohang li {
+  width: 39px;
+  height: 272px;
+  background-image: url(../img/wanfa-4f4c195a.png.webp);
+  float: left;
+  margin-left: 13px;
+}
+
+.wanfa-daohang li:nth-child(1) {
+  background-position: -368px 0px;
+}
+
+.wanfa-daohang li:nth-child(2) {
+  background-position: -58px 0px;
+}
+
+.wanfa-daohang li:nth-child(3) {
+  background-position: -114px 0px;
+}
+
+.wanfa-daohang li:nth-child(4) {
+  background-position: -169px 0px;
+}
+
+.wanfa-daohang li:nth-child(5) {
+  background-position: -226px 0px;
+}
+
+.wanfa-daohang li:nth-child(1):hover {
+  background-position: -368px 0px;
+}
+
+.wanfa-daohang li:nth-child(2):hover {
+  background-position: -426px 0px;
+}
+
+.wanfa-daohang li:nth-child(3):hover {
+  background-position: -481px 0px;
+}
+
+.wanfa-daohang li:nth-child(4):hover {
+  background-position: -538px 0px;
+}
+
+.wanfa-daohang li:nth-child(5):hover {
+  background-position: -593px 0px;
+}
+
+.qg {
+  width: 100%;
+  height: 1016px;
+  background-image: url(../img/xfe-layer-51-5f819fb4.jpg.webp);
+  position: relative;
+}
+
+.qg-top {
+  margin-left: 270px;
+}
+
+.qg-bg {
+  width: 410px;
+  height: 336px;
+  background-image: url(../img/xfe-layer-54-a15d07f4.png.webp);
+  position: absolute;
+  top: -70px;
+  left: 0;
+}
+
+.dazhan {
+  width: 100%;
+  height: 875px;
+  background-image: url(../img/xfe-layer-55-fb30668f.jpg.webp);
+  overflow: hidden;
+}
+
+.dazhan-logo {
+  margin-top: 190px;
+  margin-left: 475px;
+  margin-bottom: 60px;
+}
+
+.dazhan-zhuce {
+  width: 266px;
+  height: 69px;
+  background-image: url(../img/zc-1e18dab5.png.webp);
+  float: left;
+  margin-left: 645px;
+  cursor: pointer;
+}
+
+.dazhan-zhuce:hover {
+  background-position: 0px -69px;
+}
+
+.dazhan-down {
+  width: 266px;
+  height: 69px;
+  background-image: url(../img/xz-0dbe01bf.png.webp);
+  float: left;
+  margin-left: 70px;
+  cursor: pointer;
+}
+
+.dazhan-down:hover {
+  background-position: 0px -69px;
+}
+
+.dazhan-ewm {
+  margin-left: 210px;
+  margin-top: 230px;
+}
+
+.bottom {
+  width: 100%;
+  height: 185px;
+  background-color: #222;
+  color: #555;
+  font-size: 12px;
+  line-height: 18px;
+  overflow: hidden;
+  padding: 15px 0;
+  padding-left: 200px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 500px;
+}
+
+.bottom img {
+  float: left;
+}
+
+.bottom ul {
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.bottom ul li {
+  float: left;
+  margin-left: 10px;
+  margin-top: 8px;
+  position: relative;
+}
+
+.bottom ul li:before {
+  content: '';
+  width: 1px;
+  height: 10px;
+  position: absolute;
+  top: 5px;
+  right: -5px;
+  background-color: #555;
+}
+
+.bottom ul li:last-child:before {
+  width: 0px;
+}
+
+.bottom a {
+  color: #555;
+}
+
+.bottom span {
+  color: red;
 }
 /*# sourceMappingURL=xoyo.css.map */
