@@ -929,4 +929,78 @@ main .lingxue-video video::-webkit-media-controls-panel {
 .bottom span {
   color: red;
 }
+
+.lou {
+  position: fixed;
+  top: 100px;
+  left: 60px;
+  z-index: 100;
+  display: none;
+}
+
+.lou li {
+  width: 88px;
+  height: 88px;
+  background-image: url(../img/cbdh-f4d68f1b.png.webp);
+  background-position: 0px -90px;
+  cursor: pointer;
+}
+
+.lou li:first-child {
+  height: 172px;
+  background-position: 0px -12px;
+}
+
+.lou li:nth-child(2) {
+  background-position: 0px -185px;
+}
+
+.lou li:nth-child(3) {
+  background-position: 0px -278px;
+}
+
+.lou li:nth-child(4) {
+  background-position: 0px -370px;
+}
+
+.lou li:nth-child(5) {
+  background-position: 0px -462px;
+}
+
+.lou li:nth-child(6) {
+  background-position: 0px -554px;
+}
+
+.lou li:nth-child(7) {
+  background-position: 0px -646px;
+  height: 172px;
+}
+
+.lou li:nth-child(1):hover {
+  background-position: -95px -12px;
+}
+
+.lou li:nth-child(2):hover {
+  background-position: -95px -185px;
+}
+
+.lou li:nth-child(3):hover {
+  background-position: -95px -278px;
+}
+
+.lou li:nth-child(4):hover {
+  background-position: -95px -370px;
+}
+
+.lou li:nth-child(5):hover {
+  background-position: -95px -462px;
+}
+
+.lou li:nth-child(6):hover {
+  background-position: -95px -554px;
+}
+
+.lou li:nth-child(7):hover {
+  background-position: -95px -646px;
+}
 /*# sourceMappingURL=xoyo.css.map */

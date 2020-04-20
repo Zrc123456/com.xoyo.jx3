@@ -257,10 +257,125 @@
         <p>婉拒18岁以下未成年用户进入游戏 健康游戏忠告：抵制不良游戏 拒绝盗版游戏 注意自我保护 谨防受骗上当 适度游戏益脑 沉迷游戏伤身</p>
         <span><a href="#">违法和不良信息举报中心</a></span>
     </div>
+    <ul class="lou">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
     <script src="./lib/jquery-3.4.1.js"></script>
     <script src="./js/xoyo.js"></script>
     <script>
 
+        $('.lou li').eq(0).click(function () {
+            $('body,html').animate({
+                scrollTop: $('.nav1').offset().top
+            })
+        })
+        $('.lou li').eq(1).click(function () {
+            let top = $('.menpai').offset().top
+            $('body,html').animate({
+                scrollTop: top
+            }, 1000)
+        })
+        $('.lou li').eq(2).click(function () {
+            $('body,html').animate({
+                scrollTop: $('.word').offset().top
+            }, 1000)
+        })
+        $('.lou li').eq(3).click(function () {
+            $('body,html').animate({
+                scrollTop: $('.zh').offset().top
+            }, 1000)
+        })
+        $('.lou li').eq(4).click(function () {
+            $('body,html').animate({
+                scrollTop: $('.wanfa').offset().top
+            }, 1000)
+        })
+        $('.lou li').eq(5).click(function () {
+            $('body,html').animate({
+                scrollTop: $('.qg').offset().top
+            }, 1000)
+        })
+        $('.lou li').eq(6).click(function () {
+            $('body,html').animate({
+                scrollTop: $('.dazhan').offset().top
+            }, 1000)
+        })
+        $(window).on('scroll', function () {
+            if ($(this).scrollTop() >= $('.nav1').offset().top) {
+                $('.lou').show()
+            } else {
+                $('.lou').hide()
+            }
+            if ($(this).scrollTop() >= $('.nav1').offset().top && $(this).scrollTop() < $('.menpai').offset().top) {
+                $('.lou li').eq(0).css({
+                    'background-position': '-95px -12px'
+                })
+            } else {
+                $('.lou li').eq(0).css({
+                    'background-position': '0px -12px'
+                })
+            }
+            if ($(this).scrollTop() >= $('.menpai').offset().top && $(this).scrollTop() < $('.word').offset().top) {
+                $('.lou li').eq(1).css({
+                    'background-position': '-95px -185px'
+                })
+            } else {
+                $('.lou li').eq(1).css({
+                    'background-position': '0px -185px'
+                })
+            }
+            if ($(this).scrollTop() >= $('.word').offset().top && $(this).scrollTop() < $('.zh').offset().top) {
+                $('.lou li').eq(2).css({
+                    'background-position': '-95px -278px'
+                })
+            } else {
+                $('.lou li').eq(2).css({
+                    'background-position': '0px -278px'
+                })
+            }
+            if ($(this).scrollTop() >= $('.zh').offset().top && $(this).scrollTop() < $('.wanfa').offset().top) {
+                $('.lou li').eq(3).css({
+                    'background-position': '-95px -370px'
+                })
+            } else {
+                $('.lou li').eq(3).css({
+                    'background-position': '0px -370px'
+                })
+            }
+            if ($(this).scrollTop() >= $('.wanfa').offset().top && $(this).scrollTop() < $('.qg').offset().top) {
+                $('.lou li').eq(4).css({
+                    'background-position': '-95px -462px'
+                })
+            } else {
+                $('.lou li').eq(4).css({
+                    'background-position': '0px -462px'
+                })
+            }
+            if ($(this).scrollTop() >= $('.qg').offset().top && $(this).scrollTop() < $('.dazhan').offset().top) {
+                $('.lou li').eq(5).css({
+                    'background-position': '-95px -554px'
+                })
+            } else {
+                $('.lou li').eq(5).css({
+                    'background-position': '0px -554px'
+                })
+            }
+            if ($(this).scrollTop() >= $('.dazhan').offset().top) {
+                $('.lou li').eq(6).css({
+                    'background-position': '-95px -646px'
+                })
+            } else {
+                $('.lou li').eq(6).css({
+                    'background-position': '0px -646px'
+                })
+            }
+        })
     </script>
 </body>
 
