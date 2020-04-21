@@ -51,7 +51,7 @@ $('.nav li:nth-child(10)').hover(function () {
         $(this).slideUp(300)
     })
 })
-$('.main-bg img').click(function () {
+$('.main-bg-img').click(function () {
     $('.men-video').show()
     $('.men-video').show()
     $('.men-video video').trigger('play')
@@ -114,4 +114,32 @@ $('.about-top-left-top p').click(function () {
 })
 $('.about-top-right-top li').click(function () {
     $(this).addClass('about-top-right-top-active').siblings().removeClass('about-top-right-top-active')
+})
+$('.about-top-right-top li').click(function () {
+    $('.about-top-right-bottom').animate({
+        left: -$(this).index() * 490
+    })
+})
+$('.about-bottom-left div').hover(function () {
+    $(this).children('p').animate({
+        height: 50
+    }, 200)
+})
+$('.about-bottom-left div').mouseout(function () {
+    $(this).children('p').animate({
+        height: 0
+    }, 200)
+})
+$('.spbk-left p').click(function () {
+    $(this).addClass('about-active').siblings().removeClass('about-active')
+    let Index = $(this).index() - 1
+    $('.spbk-left-center').animate({
+        left: -Index * 836
+    }, 500)
+})
+$('.spbk-right-top p').click(function () {
+    $(this).addClass('about-active').siblings().removeClass('about-active')
+    $('.spbk-right-bottom').animate({
+        left: -($(this).index() - 1) * 512
+    })
 })
