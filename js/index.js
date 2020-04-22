@@ -143,3 +143,28 @@ $('.spbk-right-top p').click(function () {
         left: -($(this).index() - 1) * 512
     })
 })
+$('.group-left p').click(function () {
+    $(this).addClass('about-active').siblings().removeClass('about-active')
+
+    $('.group-bottom-center').animate({
+        left: -($(this).index() - 1) * 1350
+    })
+})
+$('.lxhz-left-left-top p').click(function () {
+    $(this).addClass('lxhz-active').siblings().removeClass('lxhz-active')
+    $('.lxhz-left-left-center div').eq($(this).index() + 1).show().siblings().hide()
+})
+$('.pzyq-top p').click(function () {
+    $(this).addClass('about-active').siblings().removeClass('about-active')
+    $('.pzyq-ck ul').animate({
+        left: -($(this).index() - 1) * 457
+    }, 500)
+})
+$('.pzyq-center-top p').click(function () {
+    $(this).attr('id', 'pzyq-center-top-active').siblings().removeAttr('id')
+    $('.pzyq-center').eq($(this).index()).fadeIn(300).siblings('div').fadeOut(300)
+})
+$('.pzyq-center-top-1 p').click(function () {
+    $(this).attr('id', 'pzyq-center-top-active').siblings().removeAttr('id')
+    $('.pzyq-center-top-1').siblings('div').eq($(this).index()).fadeIn(300).siblings('div').fadeOut(300)
+})
