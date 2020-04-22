@@ -111,6 +111,12 @@ main .lingxue-video video::-webkit-media-controls-panel {
   cursor: pointer;
 }
 
+.guan a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .guan:hover {
   background-position: 0px 49px;
 }

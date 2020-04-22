@@ -162,9 +162,9 @@ $('.pzyq-top p').click(function () {
 })
 $('.pzyq-center-top p').click(function () {
     $(this).attr('id', 'pzyq-center-top-active').siblings().removeAttr('id')
-    $('.pzyq-center').eq($(this).index()).fadeIn(300).siblings('div').fadeOut(300)
+    $('.pzyq-center').eq($(this).index()).show().siblings('div').hide()
 })
 $('.pzyq-center-top-1 p').click(function () {
     $(this).attr('id', 'pzyq-center-top-active').siblings().removeAttr('id')
-    $('.pzyq-center-top-1').siblings('div').eq($(this).index()).fadeIn(300).siblings('div').fadeOut(300)
+    $('.pzyq-center-top-1').siblings('div').eq($(this).index()).show().siblings('div').hide()
 })
